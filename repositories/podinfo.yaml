@@ -1,0 +1,13 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: HelmRepository
+metadata:
+  name: podinfo
+  namespace: pieterhertogh
+spec:
+  interval: 10m0s
+  provider: generic
+  secretRef:
+    name: helm-podinfo
+  timeout: 1m0s
+  url: https://stefanprodan.github.io/podinfo
