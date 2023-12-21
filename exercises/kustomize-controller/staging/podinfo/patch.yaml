@@ -10,4 +10,4 @@ spec:
         - name: podinfod
           env:
             - name: PODINFO_UI_COLOR
-              value: "#326ce5"
+              value: "#8e8e8e"
